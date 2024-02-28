@@ -148,6 +148,7 @@ function clearAndShowIvionOptions() {
         { text: "Using Ivion", context: "usingivion" },
         { text: "Ivion Admin", context: "ivionadmin" },
         { text: "Ivion Setup", context: "ivionsetup" },
+        { text: "Ivion On-Premise", context: "iviononprem" },
         { text: "Add-in, Help and Assistance", context: "addinhelpandassistence" },
         { text: "Other", context: "ivionkba" },
     ];
@@ -380,6 +381,7 @@ const ivionOptions = [
     { text: "Ivion KBA", context: "ivionkba" },
     { text: "Ivion Setup", context: "ivionsetup" },
     { text: "Using Ivion", context: "usingivion" },
+    { text: "Ivion On-Premise", context: "iviononprem" },
 ];
 
 const vlxOptions = [

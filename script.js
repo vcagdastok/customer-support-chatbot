@@ -89,9 +89,9 @@ function showChatOptions() {
 
     // Display buttons for different chatbot services or topics
     displayOptionButton("Navvis VLX", "setContext('Navvis VLX')");
-    displayOptionButton("NavVis Ivion", "setContext('NavVis Ivion')");
+    displayOptionButton("Navvis IVION", "setContext('NavVis Ivion')");
     displayOptionButton("API Documentation", "setContext('API Documentation')");
-    displayOptionButton("NavVis M6", "setContext('NavVis M6')");
+    displayOptionButton("Navvis M6", "setContext('NavVis M6')");
     displayOptionButton("Other(Desktop Processing, Portal, Support)", "setContext('Other')");
     pingLambdaFunction()
         .then(() => {
@@ -110,10 +110,10 @@ function showChatOptions() {
 
     // Display direct option buttons
     displayOptionButton("API Documentation", "setContext('api')");
-    displayOptionButton("NavVis M6", "setContext('m6')");
+    displayOptionButton("Navvis M6", "setContext('m6')");
     displayOptionButton("Navvis VLX", "clearAndShowVlxOptions()");
-    displayOptionButton("Navvis Ivion", "clearAndShowIvionOptions()");
-    displayOptionButton("Ivion Processing", "setContext('ivionprocessing')");
+    displayOptionButton("Navvis IVION", "clearAndShowIvionOptions()");
+    displayOptionButton("IVION Processing", "setContext('ivionprocessing')");
     displayOptionButton("Other", "setContext('Other')");
 
     pingLambdaFunction()
@@ -145,10 +145,10 @@ function clearAndShowIvionOptions() {
     clearChat();
     // Display Ivion specific options
     const ivionOptions = [
-        { text: "Using Ivion", context: "usingivion" },
-        { text: "Ivion Admin", context: "ivionadmin" },
-        { text: "Ivion Setup", context: "ivionsetup" },
-        { text: "Ivion On-Premise", context: "iviononpremise" },
+        { text: "Using IVION", context: "usingivion" },
+        { text: "IVION Admin", context: "ivionadmin" },
+        { text: "IVION Setup", context: "ivionsetup" },
+        { text: "IVION On-Premise", context: "iviononpremise" },
         { text: "Add-in, Help and Assistance", context: "addinhelpandassistence" },
         { text: "Other", context: "ivionkba" },
     ];
@@ -377,11 +377,11 @@ function displayOptionButton(text, onclickFunction) {
 }
 const ivionOptions = [
     { text: "Add-in Help and Assistance", context: "addinhelpandassistence" },
-    { text: "Ivion Admin", context: "ivionadmin" },
-    { text: "Ivion KBA", context: "ivionkba" },
-    { text: "Ivion Setup", context: "ivionsetup" },
-    { text: "Using Ivion", context: "usingivion" },
-    { text: "Ivion On-Premise", context: "iviononpremise" },
+    { text: "IVION Admin", context: "ivionadmin" },
+    { text: "IVION KBA", context: "ivionkba" },
+    { text: "IVION Setup", context: "ivionsetup" },
+    { text: "Using IVION", context: "usingivion" },
+    { text: "IVION On-Premise", context: "iviononpremise" },
 ];
 
 const vlxOptions = [

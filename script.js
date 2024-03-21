@@ -146,6 +146,7 @@ function clearAndShowIvionOptions() {
     // Display Ivion specific options
     const ivionOptions = [
         { text: "Using IVION", context: "usingivion" },
+        { text: "IVION Advanced (Managing POIs,Taking Measurements,Downloading Point clouds...)", context: "usingivionadvanced" },
         { text: "IVION Admin", context: "ivionadmin" },
         { text: "IVION Setup", context: "ivionsetup" },
         { text: "IVION On-Premise", context: "iviononpremise" },
@@ -381,6 +382,7 @@ const ivionOptions = [
     { text: "IVION KBA", context: "ivionkba" },
     { text: "IVION Setup", context: "ivionsetup" },
     { text: "Using IVION", context: "usingivion" },
+    { text: "IVION Advanced", context: "usingivionadvanced" },
     { text: "IVION On-Premise", context: "iviononpremise" },
 ];
 

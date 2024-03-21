@@ -1,4 +1,30 @@
+// Function to apply inline styles to a button based on its text content
+function applyInlineStylesToButtonWithText(text, newStyles) {
+    // Find all button elements
+    const buttons = document.querySelectorAll('button');
 
+    // Iterate over each button
+    buttons.forEach(function(button) {
+        // Check if button's text content matches the specified text
+        if (button.textContent.trim() === text) {
+            // Apply new styles
+            for (const property in newStyles) {
+                button.style[property] = newStyles[property];
+            }
+        }
+    });
+}
+
+// Define the text to match and the new styles to apply
+const buttonText = 'IVION Advanced (Managing POIs,Taking Measurements,Downloading Point clouds...)';
+const newStyles = {
+    fontSize: '15px', // Example: Update font size
+    textAlign: 'left', // Example: Ensure text alignment is left
+    // Add any other styles you want to apply or modify here
+};
+
+// Apply the styles
+applyInlineStylesToButtonWithText(buttonText, newStyles);
 
 //AI Chatbot
 async function pingLambdaFunction() {
